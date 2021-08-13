@@ -45,7 +45,7 @@ img {
   max-width: 1600px;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 /* Text Styles*/
@@ -142,6 +142,223 @@ img {
   width: 95%;
 }
 
+/* WORK */
+
+.work {
+  width: 100%;
+  padding: 100px 0;
+  /* height: fit-content; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.work .grid-content {
+  width: 380px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+section.work .grid-content div {
+  width: 100%;
+  margin: 20px 0;
+  padding: 25px;
+  height: fit-content;
+}
+
+.work .grid-content div .card-img {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.work .grid-content div h1 {
+  color: #316099;
+  font-size: 2.25rem;
+}
+
+.work .grid-content img {
+  width: auto;
+  height: 100px;
+}
+
+.work .grid-content .card div {
+  margin: 0;
+}
+
+.work .grid-content .card div h2 {
+  font-size: 20px;
+  color: #1f3f68;
+  padding: 10px 0;
+}
+
+.work .grid-content .card div p {
+  font-size: 1rem;
+  color: #1f3f68;
+  padding: 10px 0;
+}
+.work .grid-content .card div a {
+  font-size: 1rem;
+  color: #5a98d0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.work .grid-content .card div a span {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.shopping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping .shopping-1,
+.shopping .shopping-2,
+.shopping .shopping-3 {
+  width: 80%;
+  margin: 20px;
+}
+
+.shopping .shopping-1 h1,
+.shopping .shopping-1 p {
+  padding: 20px;
+}
+
+.shopping .shopping-1 h1 {
+  color: #1f3f68;
+  font-size: 36px;
+}
+
+.shopping .shopping-1 p {
+  color: #1f3f68;
+}
+
+.shopping .shopping-2 {
+  position: relative;
+}
+
+.shopping .shopping-2 img {
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.shopping .shopping-2 .img-landing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* background-image: linear-gradient(to right, #1f3f68, #5593e4); */
+  background-image: linear-gradient(to top right, #0d213b, rgba(0, 0, 0, 0.3));
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.shopping .shopping-2 div {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  float: left;
+  background: transparent;
+  color: #fff;
+}
+
+.shopping .shopping-2 .cart-icon {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  color: #0d213b;
+}
+
+.shopping .shopping-2 .cart-icon i {
+  font-size: 15.625rem;
+}
+
+.shopping .shopping-2 div h1 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+}
+
+.shopping .shopping-2 div p {
+  float: left;
+}
+
+.shopping .shopping-3 {
+  padding: 10px;
+}
+
+.shopping .shopping-3 .site,
+.shopping .shopping-3 .app {
+  position: relative;
+  height: 500px;
+}
+
+.shopping .shopping-3 .app .app-landing,
+.shopping .shopping-3 .site .app-landing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to top right,
+    #42a5f5,
+    rgba(82, 135, 250, 0.3)
+  );
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.shopping .shopping-3 .site {
+  background: red;
+}
+
+.shopping .shopping-3 .app .app-market,
+.shopping .shopping-3 .site .app-market {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  color: #fff;
+}
+
+.shopping .shopping-3 .app .app-market h1,
+.shopping .shopping-3 .app .app-market p,
+.shopping .shopping-3 .site .app-market p,
+.shopping .shopping-3 .site .app-market h1 {
+  padding: 10px;
+}
+
+.shopping .shopping-3 .app .app-img {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 15px 0;
+}
+
+.shopping .shopping-3 .site .app-img {
+  height: 100%;
+}
+
+.shopping .shopping-3 .site img {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.shopping .shopping-3 .app img {
+  width: 100%;
+}
+
 /* Center All */
 .all-center {
   display: flex;
@@ -157,7 +374,7 @@ img {
 .card {
   padding: 1rem;
   border: #ccc 1px dotted;
-  margin: 0.7rem 0;
+  box-shadow: 10px 10px 20px 10px #d7ebfc, -10px -10px 20px 10px #d7ebfc;
 }
 
 /* List */
@@ -222,10 +439,18 @@ img {
 }
 
 /* Grid */
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+  width: 100%;
 }
 
 .grid-3 {

@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className='navbar text-primary'>
       <h1>
-        <i class='fad fa-shopping-cart'></i> ARCAVEL
+        <i class='fad fa-shopping-cart' /> ARCAVEL
       </h1>
       <ul>
         <li>
