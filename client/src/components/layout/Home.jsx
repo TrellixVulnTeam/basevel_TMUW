@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import NavBar from './NavBar';
 import Shoppings from './Shoppings';
 import Showcase from './Showcase';
@@ -11,6 +12,7 @@ const Home = () => {
       <Showcase />
       <Work />
       <Shoppings />
+      <Footer />
     </div>
   );
 };

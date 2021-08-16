@@ -359,6 +359,138 @@ section.work .grid-content div {
   width: 100%;
 }
 
+/* FOOTER */
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #944cad;
+  border-top-left-radius: 180px;
+}
+
+.footer .footer-content {
+  width: 80%;
+  margin: 20px;
+}
+
+.footer .footer-content .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.footer .footer-content .client h1 {
+  width: 30%;
+  font-size: 2.25rem;
+}
+
+.footer .footer-content .client p {
+  font-size: 1.125rem;
+  width: 70%;
+}
+
+.footer .footer-content .clients-logo {
+  padding: 30px 0;
+}
+
+.footer .footer-content .clients-logo div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0; */
+}
+
+.footer .footer-content .clients-logo div p.logo-1,
+.footer .footer-content .clients-logo div p.logo-2 {
+  margin: 0 auto;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  /* background: red;  */
+}
+
+.footer .footer-content .clients-logo div p.logo-1 {
+  border-bottom: 1px solid #cac9c9;
+}
+
+.footer .footer-content .clients-logo div p.logo-1,
+.footer .footer-content .clients-logo div p.logo-2 {
+  border-right: 1px solid #cac9c9;
+}
+
+.footer .footer-content .clients-logo div .hide-border {
+  border-right: none !important;
+}
+
+.footer-link {
+  background: #584c9e;
+  width: 100%;
+  border-top-right-radius: 180px;
+  padding: 10px 6%;
+  color: #fff;
+}
+
+.footer-link div div h1,
+.footer-link div div p {
+  padding: 15px 0;
+}
+
+.footer-link div div p {
+  color: #ccc;
+}
+
+.footer-link div.link-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link div.link-div a {
+  background: #462380;
+  color: #ccc;
+  padding: 12px 60px;
+  border-radius: 10px;
+}
+
+.footer-links {
+  /* background: red; */
+  border-top: 1px solid #ccc;
+  /* border */
+}
+
+.footer-links .contacts h1 {
+  font-size: 20px;
+}
+
+.footer-links .contacts,
+.footer-links .about-us,
+.footer-links .social-media {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.footer-links .about-us a,
+.footer-links .social-media a {
+  color: #fff;
+  padding: 5px 10px;
+  width: fit-content;
+  transition: all 0.5s ease;
+}
+
+.footer-links .social-media a:hover,
+.footer-links .about-us a:hover {
+  color: #ccc;
+}
+
 /* Center All */
 .all-center {
   display: flex;
@@ -462,7 +594,7 @@ section.work .grid-content div {
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
 }
 
 .btn {
@@ -673,12 +805,57 @@ table th {
 
   /* Navbar */
   .navbar {
-    display: block;
-    text-align: center;
+    /* display: block; */
+    /* text-align: center; */
+  }
+
+  .navbar {
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: -10px;
   }
 
   .navbar ul {
+    margin-top: -30px !important;
     text-align: center;
     justify-content: center;
+    padding: 5px;
   }
+
+  .navbar .hide-mobile {
+    /* display: none; */
+    display: block;
+    margin-top: 70px !important;
+    margin-right: 30px !important;
+    padding: 10px 0;
+    /* width: fit-content; */
+  }
+
+  .navbar .hide-mobile li {
+    /* background: red; */
+    width: 100%;
+    padding: 5px 10px;
+    text-align: left;
+  }
+
+  .navbar .hide-mobile li a {
+    width: 100%;
+    display: block;
+    margin-top: -10px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .hide-mobile li a:hover {
+    background: #462380;
+    color: #fff;
+  }
+}
+
+/* MENU STYLES && DROP DOWNS */
+.menu,
+.cross {
+  font-size: 30px;
+  transition: all 2.5s ease;
+  color: #462380;
+  font-weight: 300;
 }
