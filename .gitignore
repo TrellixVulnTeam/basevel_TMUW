@@ -5,15 +5,15 @@
 /node_modules
 
 # production
-/client/build
+/fontend/build
 
-/client/node_modules
-/client/.pnp
-/client/.pnp.js
+/fontend/node_modules
+/fontend/.pnp
+/fontend/.pnp.js
 
 
 # testing
-/client/coverage
+/fontend/coverage
 
 
 # misc
